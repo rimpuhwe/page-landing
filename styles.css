@@ -8,6 +8,7 @@
 :root{
     --color-button:#fed903;
     --color-background: #f1f1f1;
+    --color-background2:#ddd;
     --font-family: Verdana, Geneva, Tahoma, sans-serif;
     --color-text:#000;
     --color-icon:#ff8c00;
@@ -84,18 +85,17 @@ button{
     font-size: 14px;
     font-weight: 900;
 }
-#description-section{
+#description-container{
     border:1px solid red;
-    padding:5px;
-    width:80%;
+        width:80%;
     margin:0 auto;
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
     gap:20px;
 }
-#script , #video , #pricing , #Copyrights{
-    border:1px solid purple;
+section, #Copyrights{
+    width:100%;
 }
 #script{
     display: flex;
@@ -104,13 +104,12 @@ button{
 }
 #script #container{
     display: flex;
-    gap:5px;
+    gap:10px;
     
 }
 #icons{
-    width:15%;
+    width:25%;
     padding:10px;
-    border:1px solid salmon;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -123,8 +122,7 @@ button{
     fill:var(--color-icon);
 }
 #descript{
-    border: 1px solid saddlebrown;
-    padding: 5px;
+    padding:20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,4 +130,45 @@ button{
 #descript h3{
     font-size:24px;
     font-weight: 700;
+}
+#prices{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+#prices div{
+    width:30%;
+    border:1px solid var(--color-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 25px;
+    
+}
+#prices #title{
+    width:100%;
+    padding:10px 0;
+    background: var(--color-background2);
+    border: none;
+}
+#prices h2{
+    margin:10px 0;
+}
+#prices ul{
+    margin-bottom: 20px;
+}
+#prices ul li{
+    list-style-type: none;
+    margin:5px 0;
+}
+#prices button{
+    width:30%;
+    padding:10px;
+    margin:15px 0;
+    border-radius:2px;
+    font-size: 16px;
+    font-weight:lighter;
+    text-transform: uppercase;
 }
