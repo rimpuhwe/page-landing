@@ -10,6 +10,7 @@
     --color-background: #f1f1f1;
     --font-family: Verdana, Geneva, Tahoma, sans-serif;
     --color-text:#000;
+    --color-icon:#ff8c00;
 }
 body{
     background: var(--color-background);
@@ -35,7 +36,7 @@ body{
 
 #nav-bar ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -82,4 +83,53 @@ button{
     border-radius:2px;
     font-size: 14px;
     font-weight: 900;
+}
+#description-section{
+    border:1px solid red;
+    padding:5px;
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap:20px;
+}
+#script , #video , #pricing , #Copyrights{
+    border:1px solid purple;
+}
+#script{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+#script #container{
+    display: flex;
+    gap:5px;
+    
+}
+#icons{
+    width:15%;
+    padding:10px;
+    border:1px solid salmon;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#icons:first-child{
+    width:6%;
+}
+#icons svg{
+    fill:var(--color-icon);
+}
+#descript{
+    border: 1px solid saddlebrown;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#descript h3{
+    font-size:24px;
+    font-weight: 700;
 }
