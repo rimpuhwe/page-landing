@@ -4,3 +4,14 @@
     padding:0;
     box-sizing: border-box;
 }
+/* declaring variable :color,fonts,... */
+:root{
+    --color-button:#fed903;
+    --color-background: #f1f1f1;
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --color-text:#000;
+}
+body{
+    background: var(--color-background);
+    font-family: var(--font-family);
+}
