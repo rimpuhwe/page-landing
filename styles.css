@@ -15,3 +15,35 @@ body{
     background: var(--color-background);
     font-family: var(--font-family);
 }
+#header{
+    border:1px solid red;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:20px;
+}
+.logos{
+    width:60%;
+    padding-left:15px;
+}
+#header-img , #nav-bar{
+    width:40%;
+
+}
+#nav-bar{
+    height:fit-content
+}
+
+#nav-bar ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#nav-bar ul li{
+    list-style: none;
+}
+li .nav-link{
+    text-decoration: unset;
+    color:var(--color-text);
+}
