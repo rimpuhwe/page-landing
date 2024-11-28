@@ -13,10 +13,12 @@
     --color-text:#000;
     --color-icon:#ff8c00;
 }
+/* body */
 body{
     background: var(--color-background);
     font-family: var(--font-family);
 }
+/* styling the geader section , logo  and navigation bar */
 #header{
     display:flex;
     justify-content: space-evenly;
@@ -48,9 +50,16 @@ li .nav-link{
     text-decoration: unset;
     color:var(--color-text);
 }
+/* main */
 main{
     width:100%;
 }
+/* reducing the paragraph size */
+p{
+    font-size: 18px;
+    font-weight: lighter;
+}
+/* starting with the form section */
 #form-section{
     width:100%;
     padding:30px;
@@ -73,16 +82,17 @@ input{
     padding:5px;
     margin:0 auto;
 }
-button{
+#form-section button{
     width:25%;
     padding:5px;
     margin: 0 auto;
+    border:1px solid transparent;
     background: var(--color-button);
-    border:none;
     border-radius:2px;
     font-size: 14px;
     font-weight: 900;
 }
+/* here comes the conatiner  */
 #description-container{   
     width:80%;
     margin:0 auto;
@@ -93,7 +103,8 @@ button{
 }
 section, #Copyrights{
     width:100%;
-}
+ } 
+ /* feature-section */
 #features{
 padding:20px;
 }
@@ -107,8 +118,9 @@ padding:20px;
     gap:10px;
     
 }
+/* sizing the container that holds my icons */
 #icons{
-    width:25%;
+    width:30%;
     padding:10px;
     display:flex;
     justify-content: center;
@@ -118,6 +130,7 @@ padding:20px;
 #icons:first-child{
     width:6%;
 }
+/* changing the icons color from the default one */
 #icons svg{
     fill:var(--color-icon);
 }
@@ -131,6 +144,14 @@ padding:20px;
     font-size:24px;
     font-weight: 700;
 }
+/* section that holds the video */
+#how-works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+}
+/*  jump to prices section  */
 #prices{
     width:100%;
     display: flex;
@@ -176,7 +197,10 @@ padding:20px;
     font-size: 16px;
     font-weight:lighter;
     text-transform: uppercase;
+    background: var(--color-button);
+    border: 1px solid transparent;
 }
+/* here come the last one which is copyrights */
 #Copyrights{
     padding:20px;
     background: var(--color-background2);
@@ -201,3 +225,80 @@ align-items: center;
     padding:5px;
     font-weight: 500;
 }
+/* here comes then the esponsive design for mobile ,tablets and desktop */
+/* start with desktops and large screens  */
+
+@media (min-width: 769px) and (max-width:1440px) {
+    #header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #nav-bar ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #form-section form {
+        width: 80%;
+    }
+
+    #script #container, #prices {
+        flex-direction: row;
+    }
+    #prices{
+        display: flex;
+        justify-content: space-between;
+        padding:10px;
+    }
+
+    #prices button {
+        width: 35%;
+    }
+}
+/* for the tablet devices */
+@media (min-width: 481px) and (max-width: 768px) {
+    #nav-bar,#header-img{
+        width:50%;
+    }
+    #nav-bar ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    #form-section form {
+        width: 80%;
+    }
+    #form-section button{
+        width: 30%;
+    }
+    #description-container {
+        width: 100%;
+    }
+
+    #script #container {
+        flex-direction: column;
+    }
+    #prices{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:15px;
+    }
+    #prices div {
+        width: 50%;
+    }
+    #menu ul{
+        width:40%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+
