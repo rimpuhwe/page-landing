@@ -25,30 +25,25 @@ body{
     align-items: center;
     padding:20px;
 }
-#nav-bar{
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
 .logos{
     width:60%;
     padding-left:15px;
 }
-#header-img , .nav-bar{
+#header-img , #nav-bar{
     width:40%;
 
 }
-.nav-bar{
+#nav-bar{
     height:fit-content
 }
 
-.nav-bar ul{
+#nav-bar ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.nav-bar ul li{
+#nav-bar ul li{
     list-style: none;
 }
 li .nav-link{
@@ -263,10 +258,10 @@ align-items: center;
 }
 /* for the tablet devices */
 @media (min-width: 481px) and (max-width: 768px) {
-    .nav-bar,#header-img{
+    #nav-bar,#header-img{
         width:50%;
     }
-    .nav-bar ul{
+    #nav-bar ul{
         display: flex;
         justify-content: space-between;
         align-items: center;
