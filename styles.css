@@ -109,33 +109,31 @@ section, #Copyrights{
 padding:20px;
 }
 #script{
+    width:100%;
     display: flex;
     flex-direction: column;
     gap:10px;
 }
 #script #container{
-    display: flex;
-    gap:10px;
-    
+    display: flex;   
 }
 /* sizing the container that holds my icons */
 #icons{
-    width:30%;
-    padding:10px;
-    display:flex;
+    width:20%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-#icons:first-child{
-    width:6%;
+i{
+    font-size: 48px;
+    line-height: 48px;
+    color:var(--color-icon);
 }
 /* changing the icons color from the default one */
-#icons svg{
-    fill:var(--color-icon);
-}
+
 #descript{
-    padding:20px 0;
+    width:80%;
+    padding:20px 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,7 +226,7 @@ align-items: center;
 /* here comes then the esponsive design for mobile ,tablets and desktop */
 /* start with desktops and large screens  */
 
-@media (min-width: 769px) and (max-width:1440px) {
+@media (min-width: 769px){
     #header {
         flex-direction: row;
         justify-content: space-between;
@@ -272,15 +270,12 @@ align-items: center;
         width: 80%;
     }
     #form-section input[type="submit"]{
-        width: 30%;
+        width: 35%;
     }
     #description-container {
         width: 100%;
     }
 
-    #script #container {
-        flex-direction: column;
-    }
     #prices{
         width:100%;
         display: flex;
@@ -290,14 +285,70 @@ align-items: center;
         gap:15px;
     }
     #prices div {
-        width: 50%;
+        width: 45%;
     }
     #menu ul{
         width:40%;
         display:flex;
         justify-content: space-between;
         align-items: center;
+    }   
+
+}
+/* mobile devices  */
+@media screen and (max-width:480px){
+    header{
+        flex-direction: column;
+        gap:15px;
     }
+    #nav-bar,#header-img{
+        width:60%;
+    }
+    #nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #icons{
+        display:none;
+    }
+    #descript{
+        width:100%;
+    }
+    
+
+    #form-section form {
+        width: 80%;
+    }
+    input[type="email"]{
+        width:70%;
+    }
+    #form-section input[type="submit"]{
+        width: 40%;
+    }
+    #description-container {
+        width: 100%;
+    }
+
+    #prices{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:15px;
+    }
+    #prices div {
+        width: 80%;
+    }
+    #menu ul{
+        width:60%;
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        margin-right: 60px;
+    } 
+   
 
 }
 
